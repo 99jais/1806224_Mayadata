@@ -9,6 +9,6 @@ if (isset($_POST['submit'])) {
                 $sql = "INSERT INTO  meeting_details(meeting_name,no_of_people_attending,date,start_time,end_time)
                 values( '$name','$number','$date','$fromDate','$toDate')";
                 $result = $connection->query($sql);
-                header('Location: Index.php');
+                header('Location: index.php');
 }   
 ?>
